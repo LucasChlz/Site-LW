@@ -1,0 +1,195 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.clear {
+    clear: both;
+}
+
+/* HEADER */
+
+.header {
+    width: 100%;
+    height: 80px;
+    background-color: black;
+}
+
+.logo {
+    background-image: url('../images/LOGO1.png');
+    background-size: 100% 100%;
+    background-position: center;
+    width: 110px;
+    position: relative;
+    top: 6px;
+    height: 65px;
+    margin: 0 auto;
+}
+
+/* END HEADER */
+
+
+/* CHAMADA */
+
+.chamada {
+    height: 600px;  
+}
+
+.bloco1 {
+    height: 100%;
+    width: 50%;
+    background: black;
+    float: left;
+}
+
+.bloco1 h3 {
+    color: white;
+    font-size: 30px;
+}
+
+.bloco2 {
+    width: 50%;
+    background: white;
+    float: left;
+}
+
+.bloco2 h3 {
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+}
+
+.line {
+	/*Trocamos por 1400 para seguir com o mesmo tamanho do nosso contexto padrão da classe container!*/
+	max-width: 300px;
+    margin: 0 auto;
+    height: 45px;
+	position: relative;
+    text-align: center;
+    opacity: 0;
+}
+
+.ln {
+    position: absolute;
+    height: 2px;
+    width: 0;
+    top:20px;
+    color: white;
+	background:rgb(255, 255, 255);
+}
+
+.line h2 {
+    color: white;
+	position: relative;
+	background: black;
+	display: inline-block;
+	text-align: center;
+	font-size: 27px;
+	padding:0 20px;
+	text-transform: uppercase;
+}
+
+.bloco2 > .line h2 {
+    color: black;
+    background: white;
+}
+
+.bloco2 .ln {
+    position: absolute;
+    height: 2px;
+    width: 0;
+    top:20px;
+    color: rgb(0, 0, 0);
+	background:rgb(0, 0, 0);
+}
+
+.view {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    width: 100%;
+    max-width: 500px;
+    height: 400px;
+    background-color: rgb(255, 251, 251);
+    margin: 0 auto;
+}
+
+.container {
+    max-width: 480px;
+    height: 100%;
+}
+
+.card {
+    width: 33.3%;
+    height: 150px;
+    float: left;
+    margin: 20px 40px;
+    background: rgb(0, 0, 0);
+}
+
+.chamada-sobre{
+    width: 100%;
+    max-width: 500px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+.chamada-sobre p{
+    color: white;
+    font-size: 23px;
+    text-align: center;
+}
+
+.b30{
+    position: relative;
+    bottom: 30px;
+}
+
+
+
+[anime-op] {
+    transition: .4s;
+}
+
+[anime-op].animate {
+    opacity: 1;
+    margin: 50px auto;
+}
+
+[anime-ln] {
+    transition: .9s;
+}
+
+[anime-ln].animateln {
+    width: 100%;
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+    background: rgb(255, 255, 255);
+}
+::-webkit-scrollbar-thumb {
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+    background: #000000;
+}
+
+/* END CHAMADA */
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 1060px){
+    .bloco1{
+        width: 100%;
+    }
+    .bloco2{
+        width: 100%;
+    }
+}
+
+
+/* END RESPONSIVE */
+
+
+
+
