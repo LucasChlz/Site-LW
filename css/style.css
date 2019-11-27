@@ -60,7 +60,7 @@
     font-size: 30px;
 }
 
-.line {
+.bloco1 .line {
 	/*Trocamos por 1400 para seguir com o mesmo tamanho do nosso contexto padrão da classe container!*/
 	max-width: 300px;
     margin: 0 auto;
@@ -70,7 +70,7 @@
     opacity: 0;
 }
 
-.ln {
+.bloco1 .ln {
     position: absolute;
     height: 2px;
     width: 0;
@@ -79,7 +79,7 @@
 	background:rgb(255, 255, 255);
 }
 
-.line h2 {
+.bloco1 .line h2 {
     color: white;
 	position: relative;
 	background: black;
@@ -90,9 +90,14 @@
 	text-transform: uppercase;
 }
 
-.bloco2 > .line h2 {
-    color: black;
-    background: white;
+.bloco2 .line {
+	/*Trocamos por 1400 para seguir com o mesmo tamanho do nosso contexto padrão da classe container!*/
+	max-width: 300px;
+    margin: 0 auto;
+    height: 45px;
+	position: relative;
+    text-align: center;
+    opacity: 0;
 }
 
 .bloco2 .ln {
@@ -100,9 +105,20 @@
     height: 2px;
     width: 0;
     top:20px;
-    color: rgb(0, 0, 0);
 	background:rgb(0, 0, 0);
 }
+
+.bloco2 .line h2 {
+    color: rgb(0, 0, 0);
+	position: relative;
+	background: rgb(255, 253, 253);
+	display: inline-block;
+	text-align: center;
+	font-size: 27px;
+	padding:0 20px;
+	text-transform: uppercase;
+}
+
 
 .view {
     overflow-y: scroll;
@@ -110,13 +126,14 @@
     width: 100%;
     max-width: 500px;
     height: 400px;
-    background-color: rgb(255, 251, 251);
+    background-color: rgb(255, 255, 255);
     margin: 0 auto;
 }
 
 .container {
     max-width: 480px;
     height: 100%;
+    margin: 0 auto;
 }
 
 .card {
@@ -176,14 +193,160 @@
 
 /* END CHAMADA */
 
+/* FORMULARIO */
+
+.form{
+    height: 400px;
+}
+
+.form .container {
+    max-width: 600px;
+    margin: 40px auto;
+}
+
+.formulario .line {
+	/*Trocamos por 1400 para seguir com o mesmo tamanho do nosso contexto padrão da classe container!*/
+    margin: 30px auto;
+    max-width: 600px;
+    height: 45px;
+	position: relative;
+    text-align: center;
+    opacity: 1;
+}
+
+.formulario .ln {
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    top:15px;
+	background:rgb(0, 0, 0);
+}
+
+.formulario .line h2 {
+    color: rgb(0, 0, 0);
+	position: relative;
+	background: rgb(255, 253, 253);
+	display: inline-block;
+	text-align: center;
+	font-size: 23px;
+	padding:0 20px;
+	text-transform: uppercase;
+}
+
+form input[type=text]{
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid black;
+    max-width: 600px;
+    height: 40px;
+    margin: 10px 0;
+    padding: 2%;
+}
+
+form input[type=email]{
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid black;
+    max-width: 600px;
+    height: 40px;
+    margin: 10px 0;
+    padding: 2%;
+}
+
+form textarea{
+    border-radius: 10px;
+    border: 1px solid black;
+    padding: 2%;
+    width: 100%;
+    max-width: 600px;
+    resize: none;
+    height: 100px;
+}
+
+input:focus{
+   outline: none;
+}
+
+textarea:focus{
+   outline: none;
+}
+
+input[type=submit]{
+    border-radius: 20px;
+    border: 1px solid black;
+    margin-top: 10px;
+    width: 150px;
+    height: 50px;
+    background: black;
+    color: white;
+    border: 0;
+}
+
+/* FIM DO FORMULARIO */
+
+/* Footer */
+
+.footer-contato {
+    background: rgb(255, 255, 255);
+    padding-top: 25px;
+    width: 100%;
+    text-align: center;
+    height: 100px;
+}
+
+footer .line {
+	/*Trocamos por 1400 para seguir com o mesmo tamanho do nosso contexto padrão da classe container!*/
+    margin: 30px auto;
+    height: 50px;
+	position: relative;
+    text-align: center;
+    opacity: 1;
+}
+
+footer .ln {
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    bottom: -32px;
+	background:rgb(0, 0, 0);
+}
+
+.footer-contato a {
+    margin: 20px;
+    font-size: 45px;
+    color: black;
+}
+
+/* Fim do footer */
+
+
 /* RESPONSIVE */
 
 @media screen and (max-width: 1060px){
     .bloco1{
         width: 100%;
+        padding: 0 5%;
     }
     .bloco2{
         width: 100%;
+        padding: 0 5%;
+    }
+    .card{
+        width: 45%;
+        margin: 10px 12px;
+    }
+}
+
+@media screen and (max-width: 660px){
+    .form{
+        padding: 0 5%;
+    }
+}
+
+@media screen and (max-width: 560px){
+    .card{
+        width: 45%;
+        margin: 10px 5px;
     }
 }
 
